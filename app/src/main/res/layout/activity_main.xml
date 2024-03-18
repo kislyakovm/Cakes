@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F0">
+
+    <TextView
+        android:id="@+id/textHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Hello"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/materialCardView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Username"
+        android:textColor="@color/material_dynamic_neutral20"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textHello"
+        app:layout_constraintStart_toEndOf="@+id/textHello"
+        app:layout_constraintTop_toTopOf="@+id/textHello"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="Personal account"
+        app:layout_constraintBottom_toBottomOf="@+id/textUsername"
+        app:layout_constraintEnd_toEndOf="@+id/materialCardView"
+        app:layout_constraintTop_toTopOf="@+id/textUsername"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginTop="120dp"
+        android:layout_marginHorizontal="50dp"
+
+        android:layout_marginBottom="300dp"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUsername"
+        app:strokeColor="#FF374955"
+        app:strokeWidth="5dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="cake"
+            app:srcCompat="@drawable/cake_1" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/materialCardView"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/materialCardView"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+    <ImageButton
+        android:id="@+id/buttonHome"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FFF9F0"
+        android:contentDescription="home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_home" />
+
+    <ImageButton
+        android:id="@+id/buttonCakes"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:background="#FFF9F0"
+        android:contentDescription="cakes"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonHome"
+        app:layout_constraintStart_toEndOf="@+id/buttonHome"
+        app:layout_constraintTop_toTopOf="@+id/buttonHome"
+        app:srcCompat="@drawable/ic_cake" />
+
+    <ImageButton
+        android:id="@+id/buttonStar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="#FFF9F0"
+        android:contentDescription="star"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonCakes"
+        app:layout_constraintStart_toEndOf="@+id/buttonCakes"
+        app:layout_constraintTop_toTopOf="@+id/buttonCakes"
+        app:srcCompat="@drawable/ic_star" />
+
+    <ImageButton
+        android:id="@+id/buttonMessage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="#FFF9F0"
+        android:contentDescription="message"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonStar"
+        app:layout_constraintStart_toEndOf="@+id/buttonStar"
+        app:layout_constraintTop_toTopOf="@+id/buttonStar"
+        app:srcCompat="@drawable/ic_message" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
