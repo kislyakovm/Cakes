@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF9F0">
+    android:background="@color/main_background">
 
     <TextView
         android:id="@+id/textHello"
@@ -84,7 +84,7 @@
         android:layout_height="64dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
-        android:background="#FFF9F0"
+        android:background="@color/main_background"
         android:contentDescription="home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,8 +95,9 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="32dp"
-        android:background="#FFF9F0"
+        android:background="@color/main_background"
         android:contentDescription="cakes"
+        android:onClick="goCakesList"
         app:layout_constraintBottom_toBottomOf="@+id/buttonHome"
         app:layout_constraintStart_toEndOf="@+id/buttonHome"
         app:layout_constraintTop_toTopOf="@+id/buttonHome"
@@ -106,7 +107,7 @@
         android:id="@+id/buttonStar"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="#FFF9F0"
+        android:background="@color/main_background"
         android:contentDescription="star"
         android:layout_marginStart="32dp"
         app:layout_constraintBottom_toBottomOf="@+id/buttonCakes"
@@ -118,7 +119,7 @@
         android:id="@+id/buttonMessage"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="#FFF9F0"
+        android:background="@color/main_background"
         android:contentDescription="message"
         android:layout_marginStart="32dp"
         app:layout_constraintBottom_toBottomOf="@+id/buttonStar"

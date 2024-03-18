@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <ImageButton
+        android:id="@+id/buttonHome"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/main_background"
+        android:contentDescription="home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_home" />
+
+    <ImageButton
+        android:id="@+id/buttonCakes"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/main_background"
+        android:contentDescription="cakes"
+        android:onClick="goCakesList"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonHome"
+        app:layout_constraintStart_toEndOf="@+id/buttonHome"
+        app:layout_constraintTop_toTopOf="@+id/buttonHome"
+        app:srcCompat="@drawable/ic_cake" />
+
+    <ImageButton
+        android:id="@+id/buttonStar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@color/main_background"
+        android:contentDescription="star"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonCakes"
+        app:layout_constraintStart_toEndOf="@+id/buttonCakes"
+        app:layout_constraintTop_toTopOf="@+id/buttonCakes"
+        app:srcCompat="@drawable/ic_star" />
+
+    <ImageButton
+        android:id="@+id/buttonMessage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@color/main_background"
+        android:contentDescription="message"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonStar"
+        app:layout_constraintStart_toEndOf="@+id/buttonStar"
+        app:layout_constraintTop_toTopOf="@+id/buttonStar"
+        app:srcCompat="@drawable/ic_message" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

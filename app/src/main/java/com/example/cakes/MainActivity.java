@@ -1,6 +1,8 @@
 package com.example.cakes;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,4 +20,10 @@ public class MainActivity extends AppCompatActivity {
         cardView.getLayoutParams().height = width;
 
     }
+
+    public void goCakesList(View view) {
+        Intent intent = new Intent(this, CakesActivity.class);
+        startActivity(intent);
+    }
+
 }
